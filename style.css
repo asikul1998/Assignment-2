@@ -101,10 +101,11 @@ padding: 0 2rem;
 .players-btn{
 color:var(--color);
 background-color: black;
-display: flex;
-flex-direction: column;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
 gap: 12px;
-width: 25%;
+width: 250px;
+height: 200px;
 padding: 15px;
 border-radius: 6px;
 margin-top: 20px ;
@@ -136,6 +137,7 @@ overflow: hidden;
     justify-content:space-around;
     width: 75%;
     padding: 1rem 5rem;
+    float: right;
 }
 .player-buy{
 border-radius: 10px;
@@ -201,18 +203,36 @@ border-bottom: 1px solid whitesmoke;
     .container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: ;
     }
 .players-market{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
+    display: block;
 
 }
 .players-choose{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    display: inline-block;
+}
+.players-btn{
+    width: 250px;
+    height: 250px;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
     
-}
 
 
